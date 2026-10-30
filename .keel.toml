@@ -6,3 +6,4 @@ models = ["muse-spark"]
 attacker = "muse-spark"
 test_command = "{python} -m pytest -q -p no:cacheprovider {tests} --junitxml={junit}"
 enable_auto_merge = false
+calibration = ".keel/calibration.json"   # without a calibration Keel never merges automatically
