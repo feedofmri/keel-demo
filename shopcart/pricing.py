@@ -7,7 +7,7 @@ def apply_discount(price: float, percent: float) -> float:
     """Return `price` reduced by `percent` percent, rounded to cents."""
     if not 0 <= percent <= 100:
         raise ValueError("percent must be between 0 and 100")
-    discounted = price * percent / 100
+    discounted = price * (1 - percent / 100)
     return round(discounted, 2)
 
 
