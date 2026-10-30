@@ -1,0 +1,8 @@
+# Keel configuration (managed from the Keel dashboard; edits here are fine too).
+[keel]
+alpha = 0.10          # accept at most this risk of wrong auto-merges
+method = "crc"          # "crc" per bug, "ltt" per merge
+models = ["muse-spark"]
+attacker = "muse-spark"
+test_command = "{python} -m pytest -q -p no:cacheprovider {tests} --junitxml={junit}"
+enable_auto_merge = false
